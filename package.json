@@ -1,7 +1,7 @@
 {
-  "name": "react-redux-node",
+  "name": "kyo-takehome",
   "version": "1.0.0",
-  "description": "A simple boilerplate using React/Redux and a Node server",
+  "description": "A takehome test for Kyo.",
   "main": "index.js",
   "scripts": {
     "dev": "node ./node_modules/.bin/webpack-dev-server",

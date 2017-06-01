@@ -1,11 +1,11 @@
 import React from "react";
 
-const Todo = ( { onClick, completed, text } ) => (
-    <li
+const Todo = ( { onClick, text, id } ) => (
+    <li className="todo"
         onClick={ onClick }
-        style={ { textDecoration: completed ? "line-through" : "none" } }
     >
-    { text }
+        { text }
+        <button onClick={ onClick }>Delete</button>
     </li>
 );
 

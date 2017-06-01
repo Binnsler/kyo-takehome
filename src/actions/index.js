@@ -1,23 +1,17 @@
-let nextTodoId = 0;
+export const ADD_TODO = "ADD_TODO";
+export const DELETE_TODO = "DELETE_TODO";
 
 export const addTodo = ( text ) => {
     return {
-        "type": "ADD_TODO",
-        "id": nextTodoId++,
+        "type": ADD_TODO,
+        "id": Date.now(),
         "text": text
     }
 }
 
-export const setVisibilityFilter = ( filter ) => {
+export const deleteTodo = ( id ) => {
     return {
-        "type": "SET_VISIBILITY_FILTER",
-        "filter": filter
-    }
-}
-
-export const toggleTodo = ( id ) => {
-    return {
-        "type": "TOGGLE_TODO",
+        "type": DELETE_TODO,
         "id": id
     }
 }

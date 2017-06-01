@@ -1,13 +1,17 @@
-.main-body {
-  h1 {
-    color: blue
-  }
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
 }
 
-.navbar {
-  li {
-    display: inline-block;
-    list-style: none;
-    padding: 0 20px;
-  }
+.container{
+    max-width: 500px;
+}
+
+.todo{
+    button {
+        margin-left: 10px;
+    }
 }
